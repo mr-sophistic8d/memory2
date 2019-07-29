@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Butterfly+Kids&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/f7fdf06d37.js"></script>
+    <title>Memory Card Game</title>
+</head>
+<body>
+        <header><h1>Memory Card Game</h1></header>
+  <main>
+      <div class="container-deck" id="card-deck">
+        <div class="card" type="address"><i class="far fa-address-book"></i></div>
+        <div class="card" type="reddit"><i class="fab fa-reddit"></i></div>
+        <div class="card" type="adversal"><i class="fab fa-adversal"></i></div>
+        <div class="card" type="heart"><i class="fas fa-heart-broken"></i></div>
+        <div class="card" type="laugh"><i class="fas fa-laugh"></i></div>
+        <div class="card" type="playstation"><i class="fab fa-playstation"></i></div>
+        <div class="card" type="atom"><i class="fas fa-atom"></i></div>
+        <div class="card" type="question"><i class="fas fa-question-circle"></i></div>
+        <div class="card" type="atom"><i class="fas fa-atom"></i></div>
+        <div class="card" type="playstation"><i class="fab fa-playstation"></i></div>
+        <div class="card" type="address"><i class="far fa-address-book"></i></div>
+        <div class="card" type="reddit"><i class="fab fa-reddit"></i></div>
+        <div class="card" type="laugh"><i class="fas fa-laugh"></i></div>
+        <div class="card" type="question"><i class="fas fa-question-circle"></i></div>
+        <div class="card" type="adversal"><i class="fab fa-adversal"></i></div>
+        <div class="card" type="heart"><i class="fas fa-heart-broken"></i></div>
+      </div>
+  </main> 
+  <script src="script.js"></script>
+
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Well Done </h2>
+            <a class="close" id="close-icon" href=#>×</a>
+            <div class="content-1">
+               You Won!
+            </div>
+            <div class="content-2">
+                <p>You made
+                    <span id=finalMove> </span> moves </p>
+                <p>in
+                    <span id=totalTime> </span>
+                </p>
+            </div>
+            <button id="play-again" onclick="playAgain()">
+                    Play again </a>
+                </button>
+        </div>
+    </div>
+
+    <div id="popup2" class="overlay">
+        <div class="popup">
+            <h2>Game Over</h2>
+            <a class="close" id="close-icon" href=#>×</a>
+            <div class="content-1">
+                Better Luck Next Time
+            </div>
+            <button id="play-again" onclick="playAgain()">
+                    Play again </a>
+            </button>
+        </div>
+    </div>
+
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
